@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manuel Irigoyen · Videos para sitios web</title>
+<meta name="description" content="Videos que hice para distintos tipos de sitios web: landings, tiendas online, restaurantes y más.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <a class="logo" href="#">Manuel Irigoyen</a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="site-nav" aria-label="Navegación principal">
+      <a href="#trabajos">Trabajos</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+      <button class="theme" id="theme" aria-label="Cambiar entre modo claro y oscuro">Modo</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>De la idea a la pantalla <span class="play" aria-hidden="true"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></h1> 
+      <p>Edito y produzco videos para diferentes tipos de clientes y proyectos.<br>Mirá cómo quedó cada uno:</p>
+      <a class="cta" href="#trabajos">Ver los videos</a>
+    </section>
+
+    <section id="trabajos" aria-label="Videos">
+      <div class="filters" id="filters" role="group" aria-label="Filtrar por tipo de sitio"></div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <section class="block" id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <div class="about">
+        <p>Experiencia de 5 años en producción y edición de material audiovisual principalmente con Adobe Premiere Pro, integrando criterios de UX/UI y comunicación digital para mejorar la experiencia visual de los proyectos.
+          Gestión de contenido digital y redes sociales para comercios.
+          Implementación de tiendas online con Tiendanube y Empretienda, optimizando experiencia de usuario y conversión.</p>
+        <ul class="services">
+          <li>Videos para landing pages<span>Presentaciones cortas que explican el producto en segundos.</span></li>
+          <li>Videos para tiendas online<span>Demostraciones de producto y anuncios.</span></li>
+          <li>Videos para negocios locales<span>Recorridos, menús y promociones.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block" id="herramientas">
+      <h2>Con qué trabajo</h2>
+      <div class="toolbox">
+        <div>
+          <h3>Edición y diseño</h3>
+          <p class="sub">Los programas y apps con los que edito, exporto y preparo cada video.</p>
+          <ul class="chips" id="tools-edit"></ul>
+        </div>
+        <div class="ai">
+          <h3>Inteligencia artificial</h3>
+          <p class="sub">Aplicada con criterio. Solo cuando suma valor.
+          Domino distintas herramientas de IA para edición y video, pero la dirección y el resultado final dependen de mí.</p>
+          <ul class="chips" id="tools-ai"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="block contact" id="contacto">
+      <h2>¿Necesitas cualquier tipo de video? Contactame:</h2>
+      <div class="contact">
+        <a class="mail" href="mailto:manuirigoyen@hotmail.com">manuirigoyen@hotmail.com</a>
+        <div class="social">
+          <a href="https://instagram.com/manuirigoyen69" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://linkedin.com/in/manuel-irigoyen-434659145" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://wa.me/2983380740" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Irigoyen Manuel. Todos los derechos reservados 😂.</footer>
+</div>
+
+<dialog id="modal" aria-label="Reproductor de video">
+  <button class="close" id="close">Cerrar</button>
+  <div class="player" id="player"></div>
+  <p class="cap" id="cap"></p>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
